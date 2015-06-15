@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Cannon's Testing HTML Website</title>
+		<link rel="stylesheet" href = "style.css" />
+		<script src="javascriptCode.js"></script>
+		
+	</head >
+	<body id = "main">
+	
+		<div id = "mainTitle">
+			<h1>Cannon's Custom Website </h1>
+		</div>
+		
+		
+		<div id = "CanvasArea" >
+			<canvas id = "CanvasID" width = "600pt" height = "600pt" > This is the canvas </canvas>
+		</div>
+		
+		<div id = "nav"></div>
+		
+		<div  id = "ButtonProgramArea">
+			<p>Choose to free draw or auto-draw:</p>
+			<p id = "textToChange">0</p>
+			<button id = "Button" onclick="DisplayNumber(3)">Free Draw</button>
+		</div>
+		
+		<div id = "Updates">
+			<p> Number of color changes on the screen:</p>
+			<p id = "Num">null</p>
+		</div>
+		
+		<div id = "SlopeDiv">
+			<p>Change the slope of the procedurally generated line!</p>
+			<button id = "adder" onclick = "AddSlope(1)">Steeper</button>
+			<button id = "subtracter" onclick = "AddSlope(-1)">Less Steep</button>
+		</div>
+		
+		<div id = "SizeDiv">
+			<p>Change the size of the dot!</p>
+			<button id = "SizeAdd" onclick = "SizeAdd(1)">Add Size</button>
+			<button id = "SizeSubtract" onclick = "SizeAdd(-1)" >Subtract Size</button>
+		</div>
+		
+		<div id = "FreqDiv">
+			<p>Change how fast the colors change!</p>
+			<button id = "addFreq" onclick = "ChangeFrequency(0.01)">More Frequent</button>
+			<button id = "subtractFreq" onclick = "ChangeFrequency(-0.01)">Less Frequent</button>
+		</div>
+	</body>
+</html>
